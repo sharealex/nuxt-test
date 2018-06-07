@@ -78,10 +78,16 @@
       </b-col>
     </b-row>
 
+
+    <div
+    class="container bd-content"
+    v-html="readme"/>
   </b-container>
 </template>
 
 <script>
+  import readme from '~/markdown/test.md'
+
   export default {
     data() {
       return {
@@ -110,6 +116,11 @@
             href: '/'
           }
         ]
+      }
+    },
+    computed: {
+      readme() {
+        return readme
       }
     },
     layout: 'users'

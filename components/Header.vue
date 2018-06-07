@@ -7,13 +7,13 @@
 
       <!-- 左侧菜单 -->
       <b-collapse is-nav id="nav_collapse">
-        <b-navbar-nav v-for="leftMenu in leftMenus">
+        <b-navbar-nav v-for="leftMenu in leftMenus" :key="leftMenu.text">
           <b-nav-item :to="leftMenu.href">{{leftMenu.text}}</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
 
       <!-- 右侧菜单 -->
-      <b-navbar-nav v-for="rightMenu in rightMenus">
+      <b-navbar-nav v-for="rightMenu in rightMenus" :key="rightMenu.text">
         <b-nav-item :href="rightMenu.href" :title="rightMenu.text" target="_blank" right>
           <img :src="rightMenu.img" class="rightImg">
         </b-nav-item>

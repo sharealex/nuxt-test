@@ -1,3 +1,6 @@
+const marked = require('marked')
+const renderer = new marked.Renderer()
+
 const pkg = require('./package')
 
 module.exports = {
@@ -37,6 +40,7 @@ module.exports = {
    ** Global CSS
    */
   css: [
+    '~/assets/styles/highlight.min.css',
     '~/assets/styles/bootstrap-flatly.min.css'
   ],
 
@@ -49,35 +53,27 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
-    // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios',
-    // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt'
   ],
-  /*
-   ** Axios module configuration
-   */
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
-  },
 
   /*
    ** Build configuration
    */
   build: {
+    extractCSS: true,
+    cssSourceMap: true,
     /*
      ** You can extend webpack config here
      */
     extend(config, ctx) {
-      // Run ESLint on save
-      // if (ctx.isDev && ctx.isClient) {
-      //   config.module.rules.push({
-      //     enforce: 'pre',
-      //     test: /\.(js|vue)$/,
-      //     loader: 'eslint-loader',
-      //     exclude: /(node_modules)/
-      //   })
-      // }
+      config.module.rules.push({
+        test: /\.md$/,
+        use: [
+          { loader: 'html-loader' },
+          { loader: 'highlight-loader', options: { renderer } },
+          { loader: 'markdown-loader', options: { renderer } }
+        ]
+      })
     },
   },
   router: {
