@@ -92,27 +92,27 @@
     data() {
       return {
         carouselImgs: [{
-            img: 'https://i1.mifile.cn/a4/xmad_15281008215995_KnVtJ.jpg',
+            img: 'https://picsum.photos/2452/920/?image=1',
             href: '/'
           },
           {
-            img: 'https://i1.mifile.cn/a4/xmad_15278464643865_eZcPA.jpg',
+            img: 'https://picsum.photos/2452/920/?image=2',
             href: '/'
           },
           {
-            img: 'https://i1.mifile.cn/a4/xmad_15281649613254_UaRVe.jpg',
+            img: 'https://picsum.photos/2452/920/?image=3',
             href: '/'
           },
           {
-            img: 'https://i1.mifile.cn/a4/xmad_15281903421079_gNHme.jpg',
+            img: 'https://picsum.photos/2452/920/?image=4',
             href: '/'
           },
           {
-            img: 'https://i1.mifile.cn/a4/xmad_15281885324833_SWkdz.jpg',
+            img: 'https://picsum.photos/2452/920/?image=5',
             href: '/'
           },
           {
-            img: 'https://i1.mifile.cn/a4/xmad_1528186416133_oSsIT.jpg',
+            img: 'https://picsum.photos/2452/920/?image=6',
             href: '/'
           }
         ]
