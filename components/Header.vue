@@ -3,7 +3,7 @@
     <b-container>
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
       <!-- 名称 -->
-      <b-navbar-brand to="/" exact><h3>付刚</h3></b-navbar-brand>
+      <b-navbar-brand to="/" exact><h3>Fugang</h3></b-navbar-brand>
 
       <!-- 左侧菜单 -->
       <b-collapse is-nav id="nav_collapse">
@@ -27,19 +27,19 @@
     data() {
       return {
         leftMenus: [{
-          text: '博客',
-          href: '/blog'
+          text: 'Project',
+          href: '/projects'
+        },{
+          text: 'Blog',
+          href: '/blogs'
         }, {
-          text: '笔记',
-          href: '/note'
+          text: 'Essay',
+          href: '/essays'
         }, {
-          text: '随感',
-          href: '/essay'
+          text: 'Photo',
+          href: '/photos'
         }, {
-          text: '照片',
-          href: '/photo'
-        }, {
-          text: '关于',
+          text: 'About',
           href: '/about'
         }],
         rightMenus: [{

@@ -1,20 +1,10 @@
 <template>
   <b-container fluid>
     <div class="footerText">
-      <h2>404</h2>
-    </div>
-    <div class="footerText">
-      <h5>Page not found</h5>
+      <p>©2018 Fugang. All rights reserved.</p>
     </div>
   </b-container>
 </template>
-
-<script>
-  export default {
-    layout: 'initial'
-  }
-
-</script>
 
 <style scoped>
   .footerText {
