@@ -76,6 +76,6 @@ module.exports = {
   },
   router: {
     //base: '/study/my-git-desktop/nuxt-test/dist/'//发布到本地iis
-    //base: '/nuxt-test/'//发布到https://sharealex.top/nuxt-test
+    base: '/nuxt-test/'//发布到https://sharealex.top/nuxt-test
   }
 }
