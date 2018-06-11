@@ -29,27 +29,27 @@
     data() {
       return {
         carouselImgs: [{
-            img: 'https://picsum.photos/2452/920/?image=1',
+            img: 'https://picsum.photos/1110/416/?image=1',
             href: '/'
           },
           {
-            img: 'https://picsum.photos/2452/920/?image=2',
+            img: 'https://picsum.photos/1110/416/?image=2',
             href: '/'
           },
           {
-            img: 'https://picsum.photos/2452/920/?image=3',
+            img: 'https://picsum.photos/1110/416/?image=3',
             href: '/'
           },
           {
-            img: 'https://picsum.photos/2452/920/?image=4',
+            img: 'https://picsum.photos/1110/416/?image=4',
             href: '/'
           },
           {
-            img: 'https://picsum.photos/2452/920/?image=5',
+            img: 'https://picsum.photos/1110/416/?image=5',
             href: '/'
           },
           {
-            img: 'https://picsum.photos/2452/920/?image=6',
+            img: 'https://picsum.photos/1110/416/?image=6',
             href: '/'
           }
         ]
